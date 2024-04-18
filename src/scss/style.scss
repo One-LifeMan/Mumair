@@ -1,0 +1,13 @@
+@import "./../../node_modules/swiper/swiper";
+@import "./../../node_modules/swiper/modules/pagination";
+@import "./base/reset";
+@import "./base/dont_stick";
+@import "./base/vars";
+@import "./base/color-themes";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/utils";
+@import "./base/icons";
+@import "./animations/*";
+@import "./modules/**/*";
+@import "./adaptive-styles/**/*";

@@ -1,0 +1,22 @@
+.menu {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        display: inline-block;
+        padding: $spacing-sm;
+        border-radius: $borderRadius;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: $accentColor;
+            background-color: $lightPrimaryColor;
+            box-shadow: 0 4px 8px $darkPrimaryColor;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+$container: 1440;
+$containerPadding: 10px;
+$borderRadius: 0.2rem; // 4px
+
+// -
+
+$spacing-xs: 0.7rem; // 14px
+$spacing-sm: 1rem; // 20px
+$spacing-md: 1.6rem; // 32px
+$spacing-lg: 3.2rem; // 64px
+$spacing-xl: 5rem; // 100px
+
+$skillLineHeight: 12; // 12px
+$skillUX: 90%;
+$skillWebsite: 80%;
+$skillApp: 95%;
+$skillGraphic: 90%;
+$maxWidthCenterDesc: 900px;
+
+/* scrollbar */
+$scrollbarWidth: 8px;
+$scrollbarBorRad: 4px;
+
+/* FONT */
+$mainFontFamily: "Poppins";
+$mainFontStyle: normal;
+$mainFontWeight: 400;
+$mainLineHeight: 1;
+$htmlFontSize: clamp(16px, 1.041vw, 20px);
+$h1FontSize: 5rem; // 100px
+$h2FontSize: 3.2rem; // 64px
+$h3FontSize: 1.6rem; // 32px
+$h4FontSize: 1.2rem; // 24px
+$h5FontSize: 0.95rem; // 19px
+$h6FontSize: 0.8rem; // 16px

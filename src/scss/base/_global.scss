@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $mainFontFamily;
+    font-size: $htmlFontSize;
+    font-style: $mainFontStyle;
+    font-weight: $mainFontWeight;
+    line-height: $mainLineHeight;
+    color: $primaryText;
+    background-color: $primaryColor;
+}
+
+section {
+    padding: $spacing-xl 0;
+}
+
+a {
+    color: inherit;
+    transition: 0.3s;
+
+    &:hover {
+        color: $accentColor;
+    }
+}
+
+h1 {
+    font-size: $h1FontSize;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: $h2FontSize;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: $h3FontSize;
+}
+
+h4 {
+    font-size: $h4FontSize;
+}
+
+h5 {
+    font-size: $h5FontSize;
+}
+
+h6 {
+    font-size: $h6FontSize;
+}
+
+::-webkit-scrollbar {
+    width: $scrollbarWidth;
+}
+
+::-webkit-scrollbar-track {
+    background: $darkPrimaryColor;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $lightPrimaryColor;
+    border-radius: $scrollbarBorRad;
+
+    &:hover {
+        background: $accentColor;
+    }
+}
+
+::-moz-scrollbar {
+    width: $scrollbarWidth;
+}
+
+::-moz-scrollbar-track {
+    background: $darkPrimaryColor;
+}
+
+::-moz-scrollbar-thumb {
+    background: $lightPrimaryColor;
+    border-radius: $scrollbarBorRad;
+
+    &:hover {
+        background: $accentColor;
+    }
+}
+
+img {
+    user-select: none;
+}
+
+.container {
+    max-width: $container * 1px;
+    padding: 0 $containerPadding;
+    margin: 0 auto;
+}
+
+*::selection {
+    color: $darkPrimaryColor;
+    background-color: $dividerColor;
+}
+
+.button {
+    padding: $spacing-sm;
+    color: $textIcons;
+    cursor: pointer;
+    background-color: $accentColor;
+    border: none;
+    border-radius: $borderRadius;
+
+    &:hover {
+        color: $primaryColor;
+    }
+}

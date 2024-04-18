@@ -1,0 +1,98 @@
+@use "sass:map";
+
+$theme-light: (
+    "darkPrimaryColor": #545454,
+    "primaryColor": #fff,
+    "lightPrimaryColor": #f8f8f8,
+    "textIcons": #000,
+    "accentColor": #fd6d00,
+    "primaryText": #000,
+    "secondaryText": #000,
+    "dividerColor": #bdbdbd,
+    "errorColor": #f00,
+);
+$theme-dark: (
+    "darkPrimaryColor": #121212,
+    "primaryColor": #1e1e1e,
+    "lightPrimaryColor": #f8f8f8,
+    "textIcons": #fff,
+    "accentColor": #fd6d00,
+    "primaryText": #fff,
+    "secondaryText": #000,
+    "dividerColor": #bdbdbd,
+    "errorColor": #ff4747,
+);
+
+:root {
+    --dark-primary-color: #{map-get($theme-light, "darkPrimaryColor")};
+    --light-primary-color: #{map-get($theme-light, "lightPrimaryColor")};
+    --primary-color: #{map-get($theme-light, "primaryColor")};
+    --text-icons: #{map-get($theme-light, "textIcons")};
+    --accent-color: #{map-get($theme-light, "accentColor")};
+    --primary-text: #{map-get($theme-light, "primaryText")};
+    --secondary-text: #{map-get($theme-light, "secondaryText")};
+    --divider-color: #{map-get($theme-light, "dividerColor")};
+    --error-color: #{map-get($theme-light, "errorColor")};
+}
+
+html.theme-light {
+    --dark-primary-color: #{map-get($theme-light, "darkPrimaryColor")};
+    --light-primary-color: #{map-get($theme-light, "lightPrimaryColor")};
+    --primary-color: #{map-get($theme-light, "primaryColor")};
+    --text-icons: #{map-get($theme-light, "textIcons")};
+    --accent-color: #{map-get($theme-light, "accentColor")};
+    --primary-text: #{map-get($theme-light, "primaryText")};
+    --secondary-text: #{map-get($theme-light, "secondaryText")};
+    --divider-color: #{map-get($theme-light, "dividerColor")};
+    --error-color: #{map-get($theme-light, "errorColor")};
+}
+
+html.theme-dark {
+    --dark-primary-color: #{map-get($theme-dark, "darkPrimaryColor")};
+    --light-primary-color: #{map-get($theme-dark, "lightPrimaryColor")};
+    --primary-color: #{map-get($theme-dark, "primaryColor")};
+    --text-icons: #{map-get($theme-dark, "textIcons")};
+    --accent-color: #{map-get($theme-dark, "accentColor")};
+    --primary-text: #{map-get($theme-dark, "primaryText")};
+    --secondary-text: #{map-get($theme-dark, "secondaryText")};
+    --divider-color: #{map-get($theme-dark, "dividerColor")};
+    --error-color: #{map-get($theme-dark, "errorColor")};
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-primary-color: #{map-get($theme-dark, "darkPrimaryColor")};
+        --light-primary-color: #{map-get($theme-dark, "lightPrimaryColor")};
+        --primary-color: #{map-get($theme-dark, "primaryColor")};
+        --text-icons: #{map-get($theme-dark, "textIcons")};
+        --accent-color: #{map-get($theme-dark, "accentColor")};
+        --primary-text: #{map-get($theme-dark, "primaryText")};
+        --secondary-text: #{map-get($theme-dark, "secondaryText")};
+        --divider-color: #{map-get($theme-dark, "dividerColor")};
+        --error-color: #{map-get($theme-dark, "errorColor")};
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --dark-primary-color: #{map-get($theme-light, "darkPrimaryColor")};
+        --light-primary-color: #{map-get($theme-light, "lightPrimaryColor")};
+        --primary-color: #{map-get($theme-light, "primaryColor")};
+        --text-icons: #{map-get($theme-light, "textIcons")};
+        --accent-color: #{map-get($theme-light, "accentColor")};
+        --primary-text: #{map-get($theme-light, "primaryText")};
+        --secondary-text: #{map-get($theme-light, "secondaryText")};
+        --divider-color: #{map-get($theme-light, "dividerColor")};
+        --error-color: #{map-get($theme-light, "errorColor")};
+    }
+}
+
+$darkPrimaryColor: var(--dark-primary-color);
+$lightPrimaryColor: var(--light-primary-color);
+$primaryColor: var(--primary-color);
+$textIcons: var(--text-icons);
+$accentColor: var(--accent-color);
+$primaryText: var(--primary-text);
+$secondaryText: var(--secondary-text);
+$dividerColor: var(--divider-color);
+$errorColor: var(--error-color);

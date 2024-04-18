@@ -1,0 +1,24 @@
+{
+    "font-face": {
+        "scope": "scss",
+        "prefix": "ff",
+        "body": [
+            "@font-face {",
+            "    font-family: $1;",
+            "    font-style: normal;",
+            "    font-weight: $2;",
+            "    src:",
+            "        url('./../fonts/$3.woff2') format('woff2'),",
+            "        url('./../fonts/$3.woff') format('woff'),",
+            "        url('./../fonts/$3.ttf') format('truetype');",
+            "}",
+        ],
+        "description": "My Snippet",
+    },
+    "@for": {
+        "scope": "scss",
+        "prefix": "for",
+        "body": ["@for $$i from $1 through $2 {", "    $3", "}"],
+        "description": "My Snippet",
+    },
+}

@@ -1,0 +1,31 @@
+.footer {
+    padding-top: $spacing-lg;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-lg;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+    }
+
+    &__social {
+    }
+
+    &__copyright {
+        width: 100%;
+        padding: $spacing-sm 0;
+        text-align: center;
+        background-color: $darkPrimaryColor;
+
+        & span {
+            font-weight: 700;
+            color: $accentColor;
+        }
+    }
+}

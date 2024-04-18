@@ -1,0 +1,21 @@
+.social {
+    display: flex;
+    gap: $spacing-sm;
+
+    &__link {
+        font-size: 1.6rem; // 32px
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.icon-facebook {
+}
+
+.icon-instagram {
+}
+
+.icon-twitter {
+}
+
+.icon-linkedin {
+}
